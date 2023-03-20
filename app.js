@@ -1,7 +1,7 @@
 const fs = require('fs');
-let keyword = process.argv[2];
+let keyword = process.argv[3];
 let arr = [];
-fs.readFile('./story.txt', 'utf-8', (err, data) => {
+fs.readFile(process.argv[2], 'utf-8', (err, data) => {
     if (err) {
         console.log('Error!');
     } else {
